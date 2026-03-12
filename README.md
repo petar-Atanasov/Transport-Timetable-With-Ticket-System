@@ -18,7 +18,7 @@ make
 ## To run the test cases for the program:
 Navigate to the src/ folder and run the command:
 ```
-'make testcase',
+make testcase
 ```
 after this command, the compilation process will take place and a 
 ```
@@ -27,7 +27,7 @@ testcase.exe
 file will be created.
 Now run the command 
 ```
-'./testcase.exe'
+./testcase.exe
 ```
 to run the test cases.
 ---
@@ -36,7 +36,7 @@ Navigate to src/ folder and run the 'make' command,
 after this command, the compilation process will take place and a main.exe file will be created.
 Now run the command
 ```
-'./main.exe'
+./main.exe
 ```
 to run the program.
 ---
