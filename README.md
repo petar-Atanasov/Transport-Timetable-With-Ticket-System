@@ -1,36 +1,56 @@
-#Busy Bees Bus Timetable and ticket purchasing system.
-###This program and instructions were made for windows OS cases. Please adjust where necessary for other operations systems.
-
-##Prerequisites:
+# Busy Bees Bus Timetable and ticket purchasing system.
+### This program and instructions were made for windows OS cases. Please adjust where necessary for other operations systems.
+---
+## Prerequisites:
 - Windows OS
 - Linux OS
 - GCC version 10 or above
 - GNU Make 4.3 or above
-
-##Installation instructions:
+---
+## Installation instructions:
+```
 git clone https://CST2555-Coursework@dev.azure.com/CST2555-Coursework/TFL-Database/_git/TFL-Database
 cd TFL-Database/src/
 make testcase
 make
- 
-##To run the test cases for the program:
-Navigate to the src/ folder and run the command 'make testcase',
-after this command, the compilation process will take place and a testcase.exe file will be created.
-Now run the command './testcase.exe' to run the test cases.
-
-##To run the Program:
+```
+---
+## To run the test cases for the program:
+Navigate to the src/ folder and run the command:
+```
+'make testcase',
+```
+after this command, the compilation process will take place and a 
+```
+testcase.exe
+```
+file will be created.
+Now run the command 
+```
+'./testcase.exe'
+```
+to run the test cases.
+---
+## To run the Program:
 Navigate to src/ folder and run the 'make' command,
 after this command, the compilation process will take place and a main.exe file will be created.
-Now run the command './main.exe' to run the program.
-
-##Program instructions:
+Now run the command
+```
+'./main.exe'
+```
+to run the program.
+---
+## Program instructions:
 - After running the command to execute the program, the first prompt will ask you to enter the necessary files for the program to use. 
 Please enter all .csv files the program requests and any additional ones.
 Necessary files required for the program to run:
+```
 buses.csv, routes.csv, stops.csv.
+```
 Additional files the program can optionally use:
+```
 users.csv, tickets.csv
-
+```
 - The program will ask you to then login or register.
 Please input your details to register or, use your given id number and password to login.
 
@@ -51,21 +71,31 @@ On logout the .csv files will be re-written to, with the updated information, ch
 
 - On completion of the use of the program please exit the system using the appropriate menu option.
 This will cause the program to cease operation on the command line.
-
-##Dataset Templates
+---
+## Dataset Templates
 Each dataset follows certain rules.
-Attributes making up a class are all separated by ','. Attributes representing multiple values such as lists are separated by ';'. Attributes representing hashtables are represented in the following format Key>Value|Key>Value.
+Attributes making up a class are all separated by ','. Attributes representing multiple values such as lists are separated by ';'. 
+Attributes representing hashtables are represented in the following format:
+```
+Key>Value|Key>Value.
+```
 Each dataset has an id attribute which is an integer prepended with a character. Lacking this prepended character means the data when loaded will be unable to be sorted or searched through.
 Below are the required prepended characters for each dataset type:
+```
 - BUS->B
 - ROUTE->R
 - STOPS->S
 - TICKETS->T
 - USERS->U
-
+```
 Empty attributes are represented by 'NULL'.
-Times are stored in the following format 'MM/DD/YYYY:HH:MM:SS'
-##CSV Template Examples:
+Times are stored in the following format:
+```
+'MM/DD/YYYY:HH:MM:SS'
+```
+---
+## CSV Template Examples:
+```
 - BUS: ID DRIVER CURRENT_LOCATION ROUTE_ASSIGNED CAPACITY DELAYED_STATUS
     - B1;Joe Schmoe;S1;R1;50;FALSE
 - ROUTE: ID DIRECTION START_POINT END_POINT ORDERED_STOPS ASSIGNED_BUSES DISTANCE DIVERSION
@@ -76,13 +106,15 @@ Times are stored in the following format 'MM/DD/YYYY:HH:MM:SS'
     - T1,B1,S1,S10,R1,08/23/2024:10:00:00,TRUE
 - USERS: FIRST_NAME LAST_NAME PASSWORD EMAIL UID BALANCE TICKETS
     - Janae,Summer,Froggy1,janae@summer.com,U0,0,T0;T1
-##Report and video explanation location:
+
+```
+## Report and video explanation location:
 TFL-Database/Report_and_video/
-
-##Design diagrams of the project:
+---
+## Design diagrams of the project:
 TFL-Database/Initial Diagrams Design
-
-##Contributors:
+---
+## Contributors:
 Alam Rincon M00774667, 
 Charlie Dovey M00843428, 
 Petar Atanasov M00916537, 
