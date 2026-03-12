@@ -109,10 +109,10 @@ Times are stored in the following format:
 
 ```
 ## Report and video explanation location:
-TFL-Database/Report_and_video/
+#### TFL-Database/Report_and_video/
 ---
 ## Design diagrams of the project:
-TFL-Database/Initial Diagrams Design
+#### TFL-Database/Initial Diagrams Design
 ---
 ## Contributors:
 Alam Rincon M00774667, 
